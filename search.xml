@@ -1,27 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/01/18/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>git分支进行多终端工作</title>
+    <url>/2023/01/22/post-1/</url>
+    <content><![CDATA[<h2 id="git分支进行多终端工作"><a href="#git分支进行多终端工作" class="headerlink" title="git分支进行多终端工作"></a>git分支进行多终端工作</h2><p>问题来了，如果你现在在自己的笔记本上写的博客，部署在了网站上，那么你在家里用台式机，或者实验室的台式机，发现你电脑里面没有博客的文件，或者要换电脑了，最后不知道怎么移动文件，怎么办？</p>
+<p>在这里我们就可以利用git的分支系统进行多终端工作了，这样每次打开不一样的电脑，只需要进行简单的配置和在github上把文件同步下来，就可以无缝操作了。</p>
+<span id="more"></span>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="机制"><a href="#机制" class="headerlink" title="机制"></a>机制</h3><p>机制是这样的，由于hexo d上传部署到github的其实是hexo编译后的文件，是用来生成网页的，不包含源文件。</p>
+<p><img src="https://pica.zhimg.com/50/v2-32ab30d0d28b916a204c03de4ed0fc4f_720w.jpg?source=1940ef5c" alt="hexo编译后的文件"></p>
+<p>也就是上传的是在本地目录里自动生成的.deploy_git里面。</p>
+<p>其他文件 ，包括我们写在source 里面的，和配置文件，主题文件，都没有上传到github</p>
+<p><img src="https://picx.zhimg.com/50/v2-59bb330178a4e010d9818911f789082b_720w.jpg?source=1940ef5c" alt="hexo未上传的其他文件"></p>
+<p>所以可以利用git的分支管理，将源文件上传到github的另一个分支即可。</p>
+<h3 id="上传分支"><a href="#上传分支" class="headerlink" title="上传分支"></a>上传分支</h3><p>首先，先在github上新建一个hexo分支，如图：</p>
+<p><img src="https://picx.zhimg.com/50/v2-ebb3e05632e85ab036663390305caa1c_720w.jpg?source=1940ef5c" alt="新建分支"></p>
+<p>然后在这个仓库的settings中，选择默认分支为hexo分支（这样每次同步的时候就不用指定分支，比较方便）。</p>
+<p><img src="https://pic1.zhimg.com/50/v2-1899b6219f3787832652813b958b9b3d_720w.jpg?source=1940ef5c" alt="分支设置"></p>
+<p>然后在本地的任意目录下，打开git bash，</p>
+<p><code>git clone git@github.com:hakinelee/hakinelee.github.io.git</code></p>
+<p>将其克隆到本地，因为默认分支已经设成了hexo，所以clone时只clone了hexo。</p>
+<p>接下来在克隆到本地的<code>hakinelee.github.io</code>中，把除了.git 文件夹外的所有文件都删掉。</p>
+<p>把之前我们写的博客源文件全部复制过来，除了.deploy_git。这里应该说一句，复制过来的源文件应该有一个.gitignore，用来忽略一些不需要的文件，如果没有的话，自己新建一个，在里面写上如下，表示这些类型文件不需要git：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">.DS<span class="emphasis">_Store</span></span><br><span class="line"><span class="emphasis">Thumbs.db</span></span><br><span class="line"><span class="emphasis">db.json</span></span><br><span class="line"><span class="emphasis">*.log</span></span><br><span class="line"><span class="emphasis">node_</span>modules/</span><br><span class="line">public/</span><br><span class="line">.deploy<span class="emphasis">*/</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>注意，如果你之前克隆过theme中的主题文件，那么应该把主题文件中的.git文件夹删掉，因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了了。</p>
+<p>而后</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit –m &quot;add branch&quot;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>这样就上传完了，可以去你的github上看一看hexo分支有没有上传上去，其中node_modules、public、db.json已经被忽略掉了，没有关系，不需要上传的，因为在别的电脑上需要重新输入命令安装。</p>
+<p><img src="https://picx.zhimg.com/50/v2-a94330ca825f4debde8ce7ceeb8f8394_720w.jpg?source=1940ef5c" alt="源文件上传"></p>
+<p>至此，hexo 博客源文件就上传完了。</p>
+<h4 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h4><p>不要忘了，每次写完最好都把源文件上传一下</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit –m &quot;xxxx&quot;</span><br><span class="line">git push </span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>如果是在已经编辑过的电脑上，已经有clone文件夹了，那么，每次只要和远端同步一下就行了</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>test</category>
+        <category>博客</category>
       </categories>
       <tags>
-        <tag>t</tag>
+        <tag>blog</tag>
+        <tag>hexo</tag>
+        <tag>git</tag>
       </tags>
   </entry>
 </search>
