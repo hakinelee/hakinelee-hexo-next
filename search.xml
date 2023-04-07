@@ -918,7 +918,8 @@
 <ul>
 <li>在定义变量或者常量的时候，不要用关键字。</li>
 </ul>
-<p>|  C++关键字如下  |<br>|  —-  | —-  |<br>| asm  | do | if | return | typedef |<br>| auto | double | inline | short | typeid |<br>| bool | dynamic_cast | int | signed | typename |<br>| break | else | long | sizeof | union |<br>| case | enum | mutable | static | unsigned |<br>| catch | explicit | namespace | static_cast | using |<br>| char | export | new | struct | virtual |<br>| class | extern | operator | switch | void |<br>| const | false | private | template | volatile |<br>| const_cast | float | protected | this | wchar_t |<br>| continue | for | public | throw | while |<br>| default | friend | register | true |<br>| delete | goto | reinterpret_cast | try |</p>
+<p>C++关键字如下：</p>
+<p>| asm  | do | if | return | typedef |<br>| auto | double | inline | short | typeid |<br>| bool | dynamic_cast | int | signed | typename |<br>| break | else | long | sizeof | union |<br>| case | enum | mutable | static | unsigned |<br>| catch | explicit | namespace | static_cast | using |<br>| char | export | new | struct | virtual |<br>| class | extern | operator | switch | void |<br>| const | false | private | template | volatile |<br>| const_cast | float | protected | this | wchar_t |<br>| continue | for | public | throw | while |<br>| default | friend | register | true |<br>| delete | goto | reinterpret_cast | try |</p>
 <h2 id="5、标识符命名规则"><a href="#5、标识符命名规则" class="headerlink" title="5、标识符命名规则"></a>5、标识符命名规则</h2><p>作用：C++规定给标识符(变量、常量)命名时，有一套自己的规则。</p>
 <ul>
 <li>标识符不能是关键字。</li>
