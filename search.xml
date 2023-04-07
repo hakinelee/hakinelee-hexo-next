@@ -874,7 +874,10 @@
   <entry>
     <title>C++学习笔记</title>
     <url>/2023/04/05/test/</url>
-    <content><![CDATA[<h2 id="1、注释"><a href="#1、注释" class="headerlink" title="1、注释"></a>1、注释</h2><p>作用：在代码中加一些说明和解释，方便自己和其他程序员阅读代码。</p>
+    <content><![CDATA[<p>C++学习笔记</p>
+<span id="more"></span>
+
+<h2 id="1、注释"><a href="#1、注释" class="headerlink" title="1、注释"></a>1、注释</h2><p>作用：在代码中加一些说明和解释，方便自己和其他程序员阅读代码。</p>
 <p>两种格式：</p>
 <ol>
 <li>单行注释：&#x2F;&#x2F; 描述信息</li>
@@ -911,12 +914,12 @@
 <p>示例：</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="comment">//常量的定义方式</span></span><br><span class="line"><span class="comment">//1、#define 宏常量</span></span><br><span class="line"><span class="comment">//2、const修饰的变量</span></span><br><span class="line">	</span><br><span class="line"><span class="comment">//1、#define 宏常量</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> Day 7</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;一周总共有：&quot;</span>&lt;&lt;Day&lt;&lt;<span class="string">&quot;天&quot;</span>&lt;&lt;endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//2、const修饰的变量</span></span><br><span class="line">	<span class="type">const</span> <span class="type">int</span> month = <span class="number">12</span>;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;一年总共有：&quot;</span>&lt;&lt;month&lt;&lt;<span class="string">&quot;月&quot;</span>&lt;&lt;endl; </span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="4、关键字"><a href="#4、关键字" class="headerlink" title="4、关键字"></a>4、关键字</h1><p>作用：关键字是C++中预先保留的单词（标识符）。</p>
+<h2 id="4、关键字"><a href="#4、关键字" class="headerlink" title="4、关键字"></a>4、关键字</h2><p>作用：关键字是C++中预先保留的单词（标识符）。</p>
 <ul>
 <li>在定义变量或者常量的时候，不要用关键字。</li>
 </ul>
 <p>C++关键字如下：<br>asm	do	if	return	typedef<br>auto	double	inline	short	typeid<br>bool	dynamic_cast	int	signed	typename<br>break	else	long	sizeof	union<br>case	enum	mutable	static	unsigned<br>catch	explicit	namespace	static_cast	using<br>char	export	new	struct	virtual<br>class	extern	operator	switch	void<br>const	false	private	template	volatile<br>const_cast	float	protected	this	wchar_t<br>continue	for	public	throw	while<br>default	friend	register	true	<br>delete	goto	reinterpret_cast	try	</p>
-<h1 id="5、标识符命名规则"><a href="#5、标识符命名规则" class="headerlink" title="5、标识符命名规则"></a>5、标识符命名规则</h1><p>作用：C++规定给标识符（变量、常量）命名时，有一套自己的规则。</p>
+<h2 id="5、标识符命名规则"><a href="#5、标识符命名规则" class="headerlink" title="5、标识符命名规则"></a>5、标识符命名规则</h2><p>作用：C++规定给标识符（变量、常量）命名时，有一套自己的规则。</p>
 <ul>
 <li>标识符不能是关键字。</li>
 <li>标识符只能由数字、字母、下划线组成。</li>
