@@ -880,36 +880,36 @@
 <h2 id="1、注释"><a href="#1、注释" class="headerlink" title="1、注释"></a>1、注释</h2><p>作用：在代码中加一些说明和解释，方便自己和其他程序员阅读代码。</p>
 <p>两种格式：</p>
 <ol>
-<li>单行注释：&#x2F;&#x2F; 描述信息</li>
+<li>单行注释：<code>// 描述信息</code></li>
 </ol>
 <ul>
 <li>通常在一行代码的上方，或者一条语句的末尾，对该行代码说明。</li>
 </ul>
 <ol start="2">
-<li>多行注释：&#x2F;* 描述信息 *&#x2F;</li>
+<li>多行注释：<code>/* 描述信息 */</code></li>
 </ol>
 <ul>
 <li>通常在一行代码的上方，对该段代码做整体说明。</li>
 <li>提示：编译器在编译代码时，会忽略注释的内容。</li>
 </ul>
 <h2 id="2、变量"><a href="#2、变量" class="headerlink" title="2、变量"></a>2、变量</h2><p>作用：给一段指定的内存空间起名，方便操作这段内存。</p>
-<p>语法：数据类型 变量名 &#x3D; 初始值；</p>
+<p>语法：<code>数据类型 变量名 = 初始值；</code></p>
 <p>实例：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">    <span class="built_in">system</span> (<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">    <span class="built_in">system</span> (<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="3、常量"><a href="#3、常量" class="headerlink" title="3、常量"></a>3、常量</h2><p>作用：用于记录程序中不可更改的数据。</p>
 <p>C++定义常量的两种方式：</p>
 <ol>
-<li>#define 宏常量：# define 常量名 常量值</li>
+<li>#define 宏常量：<code># define 常量名 常量值</code></li>
 </ol>
 <ul>
 <li>通常在文件上方定义，表示一个常量。</li>
 </ul>
 <ol start="2">
-<li>const修饰的变量：const 数据类型 常量名 &#x3D; 常量值</li>
+<li>const修饰的变量：<code>const 数据类型 常量名 = 常量值</code></li>
 </ol>
 <ul>
-<li>通常在变量定义前加关键字const，修饰该变量为常量，不可更改。</li>
+<li>通常在变量定义前加关键字<code>const</code>，修饰该变量为常量，不可更改。</li>
 </ul>
 <p>示例：</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="comment">//常量的定义方式</span></span><br><span class="line"><span class="comment">//1、#define 宏常量</span></span><br><span class="line"><span class="comment">//2、const修饰的变量</span></span><br><span class="line">	</span><br><span class="line"><span class="comment">//1、#define 宏常量</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> Day 7</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;一周总共有：&quot;</span>&lt;&lt;Day&lt;&lt;<span class="string">&quot;天&quot;</span>&lt;&lt;endl;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//2、const修饰的变量</span></span><br><span class="line">	<span class="type">const</span> <span class="type">int</span> month = <span class="number">12</span>;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;一年总共有：&quot;</span>&lt;&lt;month&lt;&lt;<span class="string">&quot;月&quot;</span>&lt;&lt;endl; </span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -918,7 +918,7 @@
 <ul>
 <li>在定义变量或者常量的时候，不要用关键字。</li>
 </ul>
-<p>C++关键字如下：<br>asm	do	if	return	typedef<br>auto	double	inline	short	typeid<br>bool	dynamic_cast	int	signed	typename<br>break	else	long	sizeof	union<br>case	enum	mutable	static	unsigned<br>catch	explicit	namespace	static_cast	using<br>char	export	new	struct	virtual<br>class	extern	operator	switch	void<br>const	false	private	template	volatile<br>const_cast	float	protected	this	wchar_t<br>continue	for	public	throw	while<br>default	friend	register	true	<br>delete	goto	reinterpret_cast	try	</p>
+<p>|  C++关键字如下  |<br>|  —-  | —-  |<br>| asm  | do | if | return | typedef |<br>| auto | double | inline | short | typeid |<br>| bool | dynamic_cast | int | signed | typename |<br>| break | else | long | sizeof | union |<br>| case | enum | mutable | static | unsigned |<br>| catch | explicit | namespace | static_cast | using |<br>| char | export | new | struct | virtual |<br>| class | extern | operator | switch | void |<br>| const | false | private | template | volatile |<br>| const_cast | float | protected | this | wchar_t |<br>| continue | for | public | throw | while |<br>| default | friend | register | true |<br>| delete | goto | reinterpret_cast | try |</p>
 <h2 id="5、标识符命名规则"><a href="#5、标识符命名规则" class="headerlink" title="5、标识符命名规则"></a>5、标识符命名规则</h2><p>作用：C++规定给标识符（变量、常量）命名时，有一套自己的规则。</p>
 <ul>
 <li>标识符不能是关键字。</li>
