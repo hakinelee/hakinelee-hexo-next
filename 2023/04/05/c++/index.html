@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.2">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -26,7 +26,7 @@
 <meta property="og:description" content="C++学习笔记">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-04-05T15:24:24.000Z">
-<meta property="article:modified_time" content="2023-04-07T06:51:15.000Z">
+<meta property="article:modified_time" content="2023-04-09T06:42:36.000Z">
 <meta property="article:author" content="Hakine Lee">
 <meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
@@ -139,7 +139,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#C-%E5%88%9D%E8%AF%86"><span class="nav-text">C++初识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E6%B3%A8%E9%87%8A"><span class="nav-text">1、注释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81%E5%8F%98%E9%87%8F"><span class="nav-text">2、变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E5%B8%B8%E9%87%8F"><span class="nav-text">3、常量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E3%80%81%E5%85%B3%E9%94%AE%E5%AD%97"><span class="nav-text">4、关键字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5%E3%80%81%E6%A0%87%E8%AF%86%E7%AC%A6%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99"><span class="nav-text">5、标识符命名规则</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-text">数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E6%95%B4%E5%9E%8B"><span class="nav-text">1、整型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81sizeof%E5%85%B3%E9%94%AE%E5%AD%97"><span class="nav-text">2、sizeof关键字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E5%AE%9E%E5%9E%8B-%E6%B5%AE%E7%82%B9%E5%9E%8B"><span class="nav-text">3、实型(浮点型)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E3%80%81%E5%AD%97%E7%AC%A6%E5%9E%8B"><span class="nav-text">4、字符型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5%E3%80%81%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6"><span class="nav-text">5、转义字符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%9E%8B"><span class="nav-text">6、字符串型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7%E3%80%81%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B-bool"><span class="nav-text">7、布尔类型 bool</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8%E3%80%81%E6%95%B0%E6%8D%AE%E7%9A%84%E8%BE%93%E5%85%A5"><span class="nav-text">8、数据的输入</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#C-%E5%88%9D%E8%AF%86"><span class="nav-text">C++初识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E6%B3%A8%E9%87%8A"><span class="nav-text">1、注释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81%E5%8F%98%E9%87%8F"><span class="nav-text">2、变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E5%B8%B8%E9%87%8F"><span class="nav-text">3、常量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E3%80%81%E5%85%B3%E9%94%AE%E5%AD%97"><span class="nav-text">4、关键字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5%E3%80%81%E6%A0%87%E8%AF%86%E7%AC%A6%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99"><span class="nav-text">5、标识符命名规则</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-text">数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E6%95%B4%E5%9E%8B"><span class="nav-text">1、整型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81sizeof%E5%85%B3%E9%94%AE%E5%AD%97"><span class="nav-text">2、sizeof关键字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E5%AE%9E%E5%9E%8B-%E6%B5%AE%E7%82%B9%E5%9E%8B"><span class="nav-text">3、实型(浮点型)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E3%80%81%E5%AD%97%E7%AC%A6%E5%9E%8B"><span class="nav-text">4、字符型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5%E3%80%81%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6"><span class="nav-text">5、转义字符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%9E%8B"><span class="nav-text">6、字符串型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7%E3%80%81%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B-bool"><span class="nav-text">7、布尔类型 bool</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8%E3%80%81%E6%95%B0%E6%8D%AE%E7%9A%84%E8%BE%93%E5%85%A5"><span class="nav-text">8、数据的输入</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-text">运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-text">1、算术运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-text">2、赋值运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-text">3、比较运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E3%80%81%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-text">4、逻辑运算符</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -239,7 +239,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-04-07 14:51:15" itemprop="dateModified" datetime="2023-04-07T14:51:15+08:00">2023-04-07</time>
+      <time title="修改时间：2023-04-09 14:42:36" itemprop="dateModified" datetime="2023-04-09T14:42:36+08:00">2023-04-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -266,14 +266,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>2.2k</span>
+      <span>3.3k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>8 分钟</span>
+      <span>12 分钟</span>
     </span>
 </div>
 
@@ -972,6 +972,268 @@
 <p>示例：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line"> <span class="comment">//整型输入</span></span><br><span class="line"> <span class="type">int</span> a = <span class="number">0</span>;</span><br><span class="line"> cout &lt;&lt; <span class="string">&quot;请输入整型变量：&quot;</span> &lt;&lt; endl;</span><br><span class="line"> cin &gt;&gt; a;</span><br><span class="line"> cout &lt;&lt; a &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line"> <span class="comment">//浮点型输入</span></span><br><span class="line"> <span class="type">double</span> d = <span class="number">0</span>;</span><br><span class="line"> cout &lt;&lt; <span class="string">&quot;请输入浮点型变量：&quot;</span> &lt;&lt; endl;</span><br><span class="line"> cin &gt;&gt; d;</span><br><span class="line"> cout &lt;&lt; d &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line"> <span class="comment">//字符型输入</span></span><br><span class="line"> <span class="type">char</span> ch = <span class="number">0</span>;</span><br><span class="line"> cout &lt;&lt; <span class="string">&quot;请输入字符型变量：&quot;</span> &lt;&lt; endl;</span><br><span class="line"> cin &gt;&gt; ch;</span><br><span class="line"> cout &lt;&lt; ch &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line"> <span class="comment">//字符串型输入</span></span><br><span class="line"> string str;</span><br><span class="line"> cout &lt;&lt; <span class="string">&quot;请输入字符串型变量：&quot;</span> &lt;&lt; endl;</span><br><span class="line"> cin &gt;&gt; str;</span><br><span class="line"> cout &lt;&lt; str &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line"> <span class="comment">//布尔类型输入</span></span><br><span class="line"> <span class="type">bool</span> flag = <span class="literal">true</span>;</span><br><span class="line"> cout &lt;&lt; <span class="string">&quot;请输入布尔型变量：&quot;</span> &lt;&lt; endl;</span><br><span class="line"> cin &gt;&gt; flag;</span><br><span class="line"> cout &lt;&lt; flag &lt;&lt; endl;</span><br><span class="line"> <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"> <span class="keyword">return</span> EXIT_SUCCESS;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><p>作用：用于执行代码的运算</p>
+<p>本节主要讲解以下几类运算符：</p>
+<table>
+<thead>
+<tr>
+<th>运算符类型</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>算术运算符</td>
+<td>用于处理四则运算</td>
+</tr>
+<tr>
+<td>赋值运算符</td>
+<td>用于将表达式的值赋给变量</td>
+</tr>
+<tr>
+<td>比较运算符</td>
+<td>用于表达式的比较，并返回一个真值或假值</td>
+</tr>
+<tr>
+<td>逻辑运算符</td>
+<td>用于根据表达式的值返回真值或假值</td>
+</tr>
+</tbody></table>
+<h2 id="1、算术运算符"><a href="#1、算术运算符" class="headerlink" title="1、算术运算符"></a>1、算术运算符</h2><p>作用：用于处理四则运算</p>
+<p>算术运算符包括以下符号：</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>术语</th>
+<th>示例</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>+</td>
+<td>正号</td>
+<td>+3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>-</td>
+<td>负号</td>
+<td>-3</td>
+<td>-3</td>
+</tr>
+<tr>
+<td>+</td>
+<td>加</td>
+<td>10 + 5</td>
+<td>15</td>
+</tr>
+<tr>
+<td>-</td>
+<td>减</td>
+<td>10 - 5</td>
+<td>5</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>乘</td>
+<td>10 *  5</td>
+<td>50</td>
+</tr>
+<tr>
+<td>&#x2F;</td>
+<td>除</td>
+<td>10 &#x2F; 5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>%</td>
+<td>取模(取余)</td>
+<td>10 % 3</td>
+<td>1</td>
+</tr>
+<tr>
+<td>++</td>
+<td>前置递增</td>
+<td>a&#x3D;2; b&#x3D;++a;</td>
+<td>a&#x3D;3; b&#x3D;3;</td>
+</tr>
+<tr>
+<td>++</td>
+<td>后置递增</td>
+<td>a&#x3D;2; b&#x3D;a++;</td>
+<td>a&#x3D;3; b&#x3D;2;</td>
+</tr>
+<tr>
+<td>–</td>
+<td>前置递减</td>
+<td>a&#x3D;2; b&#x3D;–a;</td>
+<td>a&#x3D;1; b&#x3D;1;</td>
+</tr>
+<tr>
+<td>–</td>
+<td>后置递减</td>
+<td>a&#x3D;2; b&#x3D;a–;</td>
+<td>a&#x3D;1; b&#x3D;2;</td>
+</tr>
+</tbody></table>
+<p>示例1：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//加减乘除</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="type">int</span> a1 = <span class="number">10</span>;</span><br><span class="line">	<span class="type">int</span> b1 = <span class="number">3</span>;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; a1 + b1 &lt;&lt; endl;</span><br><span class="line">	cout &lt;&lt; a1 - b1 &lt;&lt; endl;</span><br><span class="line">	cout &lt;&lt; a1 * b1 &lt;&lt; endl;</span><br><span class="line">	cout &lt;&lt; a1 / b1 &lt;&lt; endl;  <span class="comment">//两个整数相除结果依然是整数</span></span><br><span class="line"></span><br><span class="line">	<span class="type">int</span> a2 = <span class="number">10</span>;</span><br><span class="line">	<span class="type">int</span> b2 = <span class="number">20</span>;</span><br><span class="line">	cout &lt;&lt; a2 / b2 &lt;&lt; endl; </span><br><span class="line"></span><br><span class="line">	<span class="type">int</span> a3 = <span class="number">10</span>;</span><br><span class="line">	<span class="type">int</span> b3 = <span class="number">0</span>;</span><br><span class="line">	<span class="comment">//cout &lt;&lt; a3 / b3 &lt;&lt; endl; //报错，除数不可以为0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	<span class="comment">//两个小数可以相除</span></span><br><span class="line">	<span class="type">double</span> d1 = <span class="number">0.5</span>;</span><br><span class="line">	<span class="type">double</span> d2 = <span class="number">0.25</span>;</span><br><span class="line">	cout &lt;&lt; d1 / d2 &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>总结：在除法运算中，除数不能为0</p>
+<p>示例2：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//取模</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="type">int</span> a1 = <span class="number">10</span>;</span><br><span class="line">	<span class="type">int</span> b1 = <span class="number">3</span>;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; <span class="number">10</span> % <span class="number">3</span> &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="type">int</span> a2 = <span class="number">10</span>;</span><br><span class="line">	<span class="type">int</span> b2 = <span class="number">20</span>;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; a2 % b2 &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="type">int</span> a3 = <span class="number">10</span>;</span><br><span class="line">	<span class="type">int</span> b3 = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//cout &lt;&lt; a3 % b3 &lt;&lt; endl; //取模运算时，除数也不能为0</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//两个小数不可以取模</span></span><br><span class="line">	<span class="type">double</span> d1 = <span class="number">3.14</span>;</span><br><span class="line">	<span class="type">double</span> d2 = <span class="number">1.1</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//cout &lt;&lt; d1 % d2 &lt;&lt; endl;</span></span><br><span class="line"></span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>总结：只有整型变量可以进行取模运算</p>
+<p>示例3：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//递增</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//后置递增</span></span><br><span class="line">	<span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line">	a++; <span class="comment">//等价于a = a + 1</span></span><br><span class="line">	cout &lt;&lt; a &lt;&lt; endl; <span class="comment">// 11</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//前置递增</span></span><br><span class="line">	<span class="type">int</span> b = <span class="number">10</span>;</span><br><span class="line">	++b;</span><br><span class="line">	cout &lt;&lt; b &lt;&lt; endl; <span class="comment">// 11</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//区别</span></span><br><span class="line">	<span class="comment">//前置递增先对变量进行++，再计算表达式</span></span><br><span class="line">	<span class="type">int</span> a2 = <span class="number">10</span>;</span><br><span class="line">	<span class="type">int</span> b2 = ++a2 * <span class="number">10</span>;</span><br><span class="line">	cout &lt;&lt; b2 &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//后置递增先计算表达式，后对变量进行++</span></span><br><span class="line">	<span class="type">int</span> a3 = <span class="number">10</span>;</span><br><span class="line">	<span class="type">int</span> b3 = a3++ * <span class="number">10</span>;</span><br><span class="line">	cout &lt;&lt; b3 &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>总结：前置递增先对变量进行++，再计算表达式，后置递增相反</p>
+<h2 id="2、赋值运算符"><a href="#2、赋值运算符" class="headerlink" title="2、赋值运算符"></a>2、赋值运算符</h2><p>作用：用于将表达式的值赋给变量</p>
+<p>赋值运算符包括以下几个符号：</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>术语</th>
+<th>示例</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&#x3D;</td>
+<td>赋值</td>
+<td>a&#x3D;2; b&#x3D;3;</td>
+<td>a&#x3D;2; b&#x3D;3;</td>
+</tr>
+<tr>
+<td>+&#x3D;</td>
+<td>加等于</td>
+<td>a&#x3D;0; a+&#x3D;2;</td>
+<td>a&#x3D;2;</td>
+</tr>
+<tr>
+<td>-&#x3D;</td>
+<td>减等于</td>
+<td>a&#x3D;5; a-&#x3D;3;</td>
+<td>a&#x3D;2;</td>
+</tr>
+<tr>
+<td><code>*= </code></td>
+<td>乘等于</td>
+<td>a&#x3D;2; a*&#x3D;2;</td>
+<td>a&#x3D;4;</td>
+</tr>
+<tr>
+<td>&#x2F;&#x3D;</td>
+<td>除等于</td>
+<td>a&#x3D;4; a&#x2F;&#x3D;2;</td>
+<td>a&#x3D;2;</td>
+</tr>
+<tr>
+<td>%&#x3D;</td>
+<td>模等于</td>
+<td>a&#x3D;3; a%2;</td>
+<td>a&#x3D;1;</td>
+</tr>
+</tbody></table>
+<p>示例：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//赋值运算符</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">// =</span></span><br><span class="line">	<span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line">	a = <span class="number">100</span>;</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// +=</span></span><br><span class="line">	a = <span class="number">10</span>;</span><br><span class="line">	a += <span class="number">2</span>; <span class="comment">// a = a + 2;</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// -=</span></span><br><span class="line">	a = <span class="number">10</span>;</span><br><span class="line">	a -= <span class="number">2</span>; <span class="comment">// a = a - 2</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// *=</span></span><br><span class="line">	a = <span class="number">10</span>;</span><br><span class="line">	a *= <span class="number">2</span>; <span class="comment">// a = a * 2</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// /=</span></span><br><span class="line">	a = <span class="number">10</span>;</span><br><span class="line">	a /= <span class="number">2</span>;  <span class="comment">// a = a / 2;</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// %=</span></span><br><span class="line">	a = <span class="number">10</span>;</span><br><span class="line">	a %= <span class="number">2</span>;  <span class="comment">// a = a % 2;</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3、比较运算符"><a href="#3、比较运算符" class="headerlink" title="3、比较运算符"></a>3、比较运算符</h2><p>作用：用于表达式的比较，并返回一个真值或假值</p>
+<p>比较运算符有以下符号：</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>术语</th>
+<th>示例</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&#x3D;&#x3D;</td>
+<td>相等于</td>
+<td>4 &#x3D;&#x3D; 3</td>
+<td>0</td>
+</tr>
+<tr>
+<td>!&#x3D;</td>
+<td>不等于</td>
+<td>4 !&#x3D; 3</td>
+<td>1</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>小于</td>
+<td>4 &lt; 3</td>
+<td>0</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>大于</td>
+<td>4 &gt; 3</td>
+<td>1</td>
+</tr>
+<tr>
+<td>&lt;&#x3D;</td>
+<td>小于等于</td>
+<td>4 &lt;&#x3D; 3</td>
+<td>0</td>
+</tr>
+<tr>
+<td>&gt;&#x3D;</td>
+<td>大于等于</td>
+<td>4 &gt;&#x3D; 1</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<p>示例：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line">	<span class="type">int</span> b = <span class="number">20</span>;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; (a == b) &lt;&lt; endl; <span class="comment">// 0 </span></span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; (a != b) &lt;&lt; endl; <span class="comment">// 1</span></span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; (a &gt; b) &lt;&lt; endl; <span class="comment">// 0</span></span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; (a &lt; b) &lt;&lt; endl; <span class="comment">// 1</span></span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; (a &gt;= b) &lt;&lt; endl; <span class="comment">// 0</span></span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; (a &lt;= b) &lt;&lt; endl; <span class="comment">// 1</span></span><br><span class="line">	</span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注意：C和C++ 语言的比较运算中， “真”用数字“1”来表示， “假”用数字“0”来表示。</p>
+<h2 id="4、逻辑运算符"><a href="#4、逻辑运算符" class="headerlink" title="4、逻辑运算符"></a>4、逻辑运算符</h2><p>作用：用于根据表达式的值返回真值或假值</p>
+<p>逻辑运算符有以下符号：</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>术语</th>
+<th>示例</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>!</td>
+<td>非</td>
+<td>!a</td>
+<td>如果a为假，则!a为真；  如果a为真，则!a为假。</td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>与</td>
+<td>a &amp;&amp; b</td>
+<td>如果a和b都为真，则结果为真，否则为假。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>或</td>
+</tr>
+</tbody></table>
+<p>示例1：逻辑非</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//逻辑运算符  --- 非</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; !a &lt;&lt; endl; <span class="comment">// 0</span></span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; !!a &lt;&lt; endl; <span class="comment">// 1</span></span><br><span class="line"></span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>总结： 真变假，假变真</p>
+<p>示例2：逻辑与</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//逻辑运算符  --- 与</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line">	<span class="type">int</span> b = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; (a &amp;&amp; b) &lt;&lt; endl;<span class="comment">// 1</span></span><br><span class="line"></span><br><span class="line">	a = <span class="number">10</span>;</span><br><span class="line">	b = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; (a &amp;&amp; b) &lt;&lt; endl;<span class="comment">// 0 </span></span><br><span class="line"></span><br><span class="line">	a = <span class="number">0</span>;</span><br><span class="line">	b = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; (a &amp;&amp; b) &lt;&lt; endl;<span class="comment">// 0</span></span><br><span class="line"></span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>总结：逻辑与运算符总结： 同真为真，其余为假</p>
+<p>示例3：逻辑或</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//逻辑运算符  --- 或</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line">	<span class="type">int</span> b = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; (a || b) &lt;&lt; endl;<span class="comment">// 1</span></span><br><span class="line"></span><br><span class="line">	a = <span class="number">10</span>;</span><br><span class="line">	b = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; (a || b) &lt;&lt; endl;<span class="comment">// 1 </span></span><br><span class="line"></span><br><span class="line">	a = <span class="number">0</span>;</span><br><span class="line">	b = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; (a || b) &lt;&lt; endl;<span class="comment">// 0</span></span><br><span class="line"></span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>逻辑或运算符总结： 同假为假，其余为真</p>
+
     </div>
 
     <div>
@@ -1041,13 +1303,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">24k</span>
+    <span title="站点总字数">26k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:29</span>
+    <span title="站点阅读时长">1:33</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
