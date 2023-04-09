@@ -1393,18 +1393,18 @@
 <td>!</td>
 <td>非</td>
 <td>!a</td>
-<td>如果a为假，则!a为真；  如果a为真，则!a为假。</td>
+<td>如果a为假，则!a为真；如果a为真，则!a为假</td>
 </tr>
 <tr>
 <td>&amp;&amp;</td>
 <td>与</td>
 <td>a &amp;&amp; b</td>
-<td>如果a和b都为真，则结果为真，否则为假。</td>
+<td>如果a和b都为真，则结果为真，否则为假</td>
 </tr>
 <tr>
+<td>&#96;</td>
 <td></td>
-<td></td>
-<td></td>
+<td>&#96;</td>
 <td>或</td>
 </tr>
 </tbody></table>
