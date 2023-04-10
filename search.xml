@@ -1957,4 +1957,37 @@
         <tag>实用工具</tag>
       </tags>
   </entry>
+  <entry>
+    <title>STM32学习笔记</title>
+    <url>/2023/04/10/STM32%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>本文是基于黄克亚教授的《ARM Cortex-M3嵌入式原理及应用（基于STM32F103微控制器）》一书进行系统学习所得的心得体会以及学习笔记。</p>
+<span id="more"></span>
+<h1 id="1、ARM-Cortex-M3嵌入式系统"><a href="#1、ARM-Cortex-M3嵌入式系统" class="headerlink" title="1、ARM Cortex-M3嵌入式系统"></a>1、ARM Cortex-M3嵌入式系统</h1><h1 id="2、STM32开发板硬件系统"><a href="#2、STM32开发板硬件系统" class="headerlink" title="2、STM32开发板硬件系统"></a>2、STM32开发板硬件系统</h1><h1 id="3、MDK软件与工程模版创建"><a href="#3、MDK软件与工程模版创建" class="headerlink" title="3、MDK软件与工程模版创建"></a>3、MDK软件与工程模版创建</h1><h1 id="4、通用目的输入输出口"><a href="#4、通用目的输入输出口" class="headerlink" title="4、通用目的输入输出口"></a>4、通用目的输入输出口</h1><h2 id="思考题"><a href="#思考题" class="headerlink" title="思考题"></a>思考题</h2><ol>
+<li><p>什么是GPIO？</p>
+</li>
+<li><p>STM32F103微控制器GPIO的引脚是如何命名的？</p>
+</li>
+<li><p>STM32F103微控制器GPIO有几种输入工作模式？</p>
+</li>
+<li><p>STM32F103微控制器GPIO有几种输出工作模式？</p>
+</li>
+<li><p>STM32F103微控制器GPIO输出速度有哪几种？在应用中应如何选择?</p>
+</li>
+<li><p>STM32F103微控制器GPIO相关寄存器有哪些？</p>
+</li>
+<li><p>如果需要设置GPIOE端口所有引脚输出低电平，则GPIOE ODR寄存器的值为多少?</p>
+</li>
+<li><p>如果需要设置GPIOE端口所有引脚输出高电平，则GPIOE_BSRR寄存器的值为多少?</p>
+</li>
+<li><p>STM32微控制器软件设计有哪两种常用开发方式？</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>嵌入式</category>
+      </categories>
+      <tags>
+        <tag>stm32</tag>
+      </tags>
+  </entry>
 </search>
