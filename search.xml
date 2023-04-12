@@ -2007,7 +2007,16 @@
   <entry>
     <title>计算机网络概论</title>
     <url>/2023/04/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%A6%82%E8%AE%BA/</url>
-    <content><![CDATA[<h1 id="01、前言"><a href="#01、前言" class="headerlink" title="01、前言"></a>01、前言</h1><p>建立对计算机网络的整体认识，对计算机网络中的概念（网络分层、网络协议、网络应用等）有初步的理解。进而可以在后续的实际工作中能高效解决网络问题。</p>
+    <content><![CDATA[<p>课程重点：</p>
+<ul>
+<li>网络结构</li>
+<li>TCP&#x2F;UDP</li>
+<li>HTTP 1 &#x2F; HTTP2 &#x2F; HTTP3 (QUIC)</li>
+<li>WebSocket</li>
+<li>CDN</li>
+<li>安全（SSL&#x2F;TLS&#x2F;基础密码学）<span id="more"></span></li>
+</ul>
+<h1 id="01、前言"><a href="#01、前言" class="headerlink" title="01、前言"></a>01、前言</h1><p>建立对计算机网络的整体认识，对计算机网络中的概念（网络分层、网络协议、网络应用等）有初步的理解。进而可以在后续的实际工作中能高效解决网络问题。</p>
 <p>这节课会：</p>
 <ol>
 <li>通过一个实例建立对计算机网络的整体认识；</li>
