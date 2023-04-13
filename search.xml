@@ -2039,4 +2039,24 @@
         <tag>计算机网络</tag>
       </tags>
   </entry>
+  <entry>
+    <title>CTF-密码学</title>
+    <url>/2023/04/12/ctf-1/</url>
+    <content><![CDATA[<p>CTF题目类型：</p>
+<ol>
+<li>Web安全</li>
+<li>逆向工程（Reverse）</li>
+<li>漏洞挖掘与漏洞利用（PWN,EXPLOIT）</li>
+<li>密码学（Crypto）</li>
+<li>调查取证（Misc）</li>
+<li>移动安全（Mobile）</li>
+</ol>
+]]></content>
+      <categories>
+        <category>CTF</category>
+      </categories>
+      <tags>
+        <tag>密码学</tag>
+      </tags>
+  </entry>
 </search>
